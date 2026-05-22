@@ -20,7 +20,16 @@ data/
 
 results/baseline/*.npy
 results/improved/*.npy
-results/*.png
+results/baseline/*.png
+results/improved/*.png
+results/forgetting_curves.png
+results/bwt_fwt_comparison.png
+results/sparsity_vs_accuracy.png
+results/all_accuracy_matrices.png
+results/benchmark_comparison.png
+results/sample_cifar100_tasks.png
+results/sample_permuted_mnist.png
+# code_contribution.png is tracked (documentation asset)
 
 .ipynb_checkpoints/
 *.ipynb_checkpoints
