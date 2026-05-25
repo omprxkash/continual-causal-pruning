@@ -17,6 +17,8 @@ data/
 *.pth
 *.pt
 *.h5
+# allow paper PDF in paper/
+!paper/*.pdf
 
 results/baseline/*.npy
 results/improved/*.npy
