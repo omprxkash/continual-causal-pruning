@@ -1,4 +1,4 @@
-"""
+﻿"""
 Elastic Weight Consolidation (EWC).
 
 After each task the diagonal of the empirical Fisher information matrix is
@@ -146,3 +146,4 @@ class EWC:
 
         model.train()
         return fisher
+
