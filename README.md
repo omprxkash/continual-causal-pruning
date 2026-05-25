@@ -5,6 +5,19 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-red.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Paper](https://img.shields.io/badge/Paper-IEEE%20ITW-orange.svg)](paper/ContinualCausalPruning_ITW.pdf)
+
+> **Omprakash Pugazhendhi** — Department of Computer Science and Engineering, Vellore Institute of Technology, Chennai
+> [`omprakash.2021@vitstudent.ac.in`](mailto:omprakash.2021@vitstudent.ac.in) · [`@omprxkash`](https://github.com/omprxkash)
+
+---
+
+## 📄 Paper
+
+**[Read the full paper → `paper/ContinualCausalPruning_ITW.pdf`](paper/ContinualCausalPruning_ITW.pdf)**
+
+The paper covers the full problem formulation, causal importance scoring via Fisher information, algorithm derivation, experiments on Split-CIFAR-100 (20 tasks) and Permuted-MNIST (10 tasks), and comparisons against EWC, A-GEM, and PackNet.
+LaTeX source is at [`paper/paper.tex`](paper/paper.tex) (IEEEtran format).
 
 ---
 
@@ -209,13 +222,17 @@ where $R_{i,j}$ = accuracy on task $j$ after training task $i$, and $b_i$ = rand
 
 ## Paper
 
-A full IEEE-format paper is in [`paper/paper.tex`](paper/paper.tex). Compile with:
+| | |
+|---|---|
+| **PDF** | [`paper/ContinualCausalPruning_ITW.pdf`](paper/ContinualCausalPruning_ITW.pdf) |
+| **LaTeX source** | [`paper/paper.tex`](paper/paper.tex) — IEEEtran format |
+| **Venue** | IEEE Conference (ITW format) |
+| **Author** | Omprakash Pugazhendhi, VIT Chennai |
 
+To recompile from source:
 ```bash
-pdflatex paper/paper.tex
-bibtex paper/paper
-pdflatex paper/paper.tex
-pdflatex paper/paper.tex
+cd paper
+pdflatex paper.tex && bibtex paper && pdflatex paper.tex && pdflatex paper.tex
 ```
 
 ---
